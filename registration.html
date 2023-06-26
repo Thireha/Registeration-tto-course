@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Registration</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="#">Training Program</a></li>
+      <li><a href="#">Skill</a></li>
+      <li><a href="#">Take Test</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Courses</a>
+        <div class="dropdown-content">
+          <a href="#" onclick="openRegistration('html')">HTML</a>
+          <a href="#" onclick="openRegistration('css')">CSS</a>
+          <a href="#" onclick="openRegistration('js')">JavaScript</a>
+        </div>
+      </li>
+      <li><a href="#">Home</a></li>
+    </ul>
+  </nav>
+  
+
+  <div id="registration-content">
+  </div>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Registration Form</h2>
+      <form class="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+  
+        <label for="repeat-password">Repeat Password:</label>
+        <input type="password" id="repeat-password" name="repeat-password" required>
+  
+        <input type="submit" value="Register">
+      </form>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
